@@ -1,8 +1,9 @@
-import Profile from './Profile';
-import Statistics from './Statistics/Statistics';
-import user from './user.json';
-
-console.log(user);
+import './index.css'
+import Profile from 'components/Profile/Profile.js';
+import Statistics from 'components/Statistics/Statistics';
+import user from 'json/user.json';
+import data from 'json/data.json';
+// import friends from 'json/friends.json';
 
 export const App = () => {
   return (
@@ -11,7 +12,7 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
-        flexDirection: "column",
+        flexDirection: 'column',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
@@ -26,8 +27,9 @@ export const App = () => {
           stats={user.stats}
         />
       </section>
-
-      <Statistics />
+      <section>
+        <Statistics title={'Upload stats'} stats={data} />
+      </section>
     </div>
   );
 };

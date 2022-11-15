@@ -47,28 +47,11 @@
   position: relative;
 }
 
-.stats-item {
+.statsItem {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 24px;
-}
-
-.border1::after {
-  content: '';
-  position: absolute;
-  left: 37%;
-  width: 1px;
-  height: 100%;
-  background: #7d7c7c;
-}
-.border2::after {
-  content: '';
-  position: absolute;
-  left: 70%;
-  width: 1px;
-  height: 100%;
-  background: #7d7c7c;
 }
 
 .quantity {
