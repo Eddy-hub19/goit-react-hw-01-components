@@ -13,7 +13,7 @@ function TransactionHistory({ items }) {
       </thead>
       {items.map(({ id, type, amount, currency }) => (
         <tbody className={css.grid} key={id}>
-          <tr className={css.theadRow}>
+          <tr>
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
