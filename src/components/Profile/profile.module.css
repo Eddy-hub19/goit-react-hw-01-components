@@ -3,7 +3,7 @@
   width: 500px;
   height: auto;
   text-align: center;
-  box-shadow: 0 20px 18px 3px;
+  box-shadow: 0px 10px 14px 0px;
 }
 
 .avatar {
@@ -23,6 +23,7 @@
   font-weight: 800;
   font-size: 30px;
   color: #5d5c5cd1;
+  margin-top: 20px;
 }
 
 .label {
@@ -63,4 +64,6 @@
 .tag {
   font-size: 28px;
   color: rgb(139, 136, 136);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

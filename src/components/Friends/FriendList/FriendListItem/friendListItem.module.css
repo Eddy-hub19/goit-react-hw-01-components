@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  background: rgb(255, 255, 255);
+  box-shadow: -4px 4px 11px 1px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.item span{
+  margin-right: 20px;
+}
+
+.item:hover {
+  box-shadow: inset 0px 2px 10px 3px;
+  background: rgb(238 235 235);
+}
+
+.online {
+  width: 20px;
+  height: 20px;
+  background: rgb(18, 178, 141);
+  border-radius: 60px;
+}
+.offline {
+  width: 20px;
+  height: 20px;
+  background: rgb(193, 73, 73);
+  border-radius: 60px;
+}

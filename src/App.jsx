@@ -1,21 +1,22 @@
-import './index.css'
+import './index.css';
 import Profile from 'components/Profile/Profile.js';
 import Statistics from 'components/Statistics/Statistics';
+import FriendList from 'components/Friends/FriendList/FriendList';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 import user from 'json/user.json';
 import data from 'json/data.json';
-// import friends from 'json/friends.json';
+import friends from 'json/friends.json';
+import transactions from 'json/transactions.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        marginTop: 20,
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
       }}
     >
       <section>
@@ -29,6 +30,12 @@ export const App = () => {
       </section>
       <section>
         <Statistics title={'Upload stats'} stats={data} />
+      </section>
+      <section>
+        <FriendList friends={friends} />
+      </section>
+      <section>
+        <TransactionHistory items={transactions} />
       </section>
     </div>
   );
