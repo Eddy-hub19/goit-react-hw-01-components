@@ -1,6 +1,7 @@
 .transactionHistory {
   width: 400px;
   text-align: center;
+  margin: 40px auto;
 }
 
 .thead {
